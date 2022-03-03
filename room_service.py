@@ -8,7 +8,7 @@ from cgi import print_form
 from tkinter import Place
 
 
-guests = {'102':'Ramirez', '105':'Ramirez', '107':'Ramirez'}
+guests = {'102':'Julie', '105':'Renee', '107':'Chloe'}
 starters = ['salad','paninni']
 
 Correct_info = False
