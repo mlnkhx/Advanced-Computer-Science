@@ -1,10 +1,13 @@
 #This is the list of guests in the hotel
-guests = {'123':'Zaya', '134':'Michelle', '204':'Jack'}
-
-room = input ("Please enter your room number: ")
-name = input ("Please enter your name: ")
-
-if guests[room].lower()==name.lower():
-  print ('Correct')
+room = input (“Please enter room number: “)
+if room in guests.keys():
+	Correct_info = True
 else:
-  print ('Incorrect')
+	Correct_info = False
+
+name = input (“Please enter your name:”)’
+
+if correct_info and guests[room].lower()==name.lower():
+	correct_info = True
+else:
+	correct_info = flase
