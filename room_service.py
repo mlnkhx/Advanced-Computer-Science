@@ -1,6 +1,6 @@
 """
 This program...
-By 
+By Michelle And Enkhzaya
 """
 
 #This is the list of guests in the hotel
