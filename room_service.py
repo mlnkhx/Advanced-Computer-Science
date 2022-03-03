@@ -1,3 +1,8 @@
+"""
+This program...
+By 
+"""
+
 #This is the list of guests in the hotel
 room = input (“Please enter room number: “)
 if room in guests.keys():
