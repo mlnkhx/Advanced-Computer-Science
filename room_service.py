@@ -10,7 +10,7 @@ from tkinter import Place
 
 guests = {'102':'Ramirez', '105':'Ramirez', '107':'Ramirez'}
 starters = ['salad','paninni']
-
+main = ['chiken porridge', 'kotlet', 'sushi']
 Correct_info = False
 room = None
 name = None
@@ -31,5 +31,5 @@ while not Correct_info:
 		print ('Nope')
 		Correct_info = False
 
-	print ('Please, ')
+	print ('Please, choose a starter')
 	print (starters)
