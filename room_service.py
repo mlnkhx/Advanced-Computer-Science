@@ -32,9 +32,9 @@ while not Correct_info:
 		print ('Please, try again')
 		Correct_info = False
 
-	print ('Please, choose a starter: ')
-	print (starters)
-	print ('please, choose a main: ')
-	print (main)
-	print ('please choose desert: ')
-	print (desert)
+print ('Please, choose a starter: ')
+print (starters)
+print ('please, choose a main: ')
+print (main)
+print ('please choose desert: ')
+print (desert)
