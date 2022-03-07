@@ -26,15 +26,15 @@ while not Correct_info:
 	name = input ("Please enter your name: ")
 
 	if Correct_info and guests[room].lower()==name.lower():
-		print ('Yepp')
+		print ('Thank you for the information')
 		Correct_info = True
 	else:
-		print ('Nope')
+		print ('Please, try again')
 		Correct_info = False
 
-	print ('Please, choose a starter')
+	print ('Please, choose a starter: ')
 	print (starters)
-	print ('please, choose a main')
+	print ('please, choose a main: ')
 	print (main)
-	print ('please choose desert')
+	print ('please choose desert: ')
 	print (desert)
