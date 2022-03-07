@@ -11,6 +11,7 @@ from tkinter import Place
 guests = {'102':'Julie', '105':'Renee', '107':'Chloe'}
 starters = ['salad','paninni']
 main = ['chiken porridge', 'kotlet', 'sushi']
+desert = ['ice cream', 'panna cotta',]
 Correct_info = False
 room = None
 name = None
