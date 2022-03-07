@@ -1,17 +1,16 @@
 """
-This program...
-By Michelle And Enkhzaya
+Room Service
+By: Michelle And Enkhzaya
 """
 
 #This is the list of guests in the hotel
 from cgi import print_form
 from tkinter import Place
 
-
 guests = {'102':'Julie', '105':'Renee', '107':'Chloe'}
-starters = ['salad','paninni']
+
+starters = ['salad','paninni','vegan terrine']
 main = ['chiken porridge', 'kotlet', 'sushi']
-desert = ['ice cream', 'panna cotta',]
 Correct_info = False
 room = None
 name = None
@@ -26,12 +25,13 @@ while not Correct_info:
 	name = input ("Please enter your name: ")
 
 	if Correct_info and guests[room].lower()==name.lower():
-		print ('Thank you for the information')
+		print ('Yepp')
 		Correct_info = True
 	else:
-		print ('Please, try again')
+		print ('Nope')
 		Correct_info = False
 
+<<<<<<< HEAD
 print ('Please, choose a starter: ')
 print (starters)
 print ('are you sure of what you ordered? Yes or No? ')
@@ -40,3 +40,5 @@ print (main)
 print ('please choose desert: ')
 print (desert)
 print ('Here are the bills', starters + main + desert )
+
+>>>>>>> d9bd408799c644ef74ac390a0e3260d2fd78d76c
