@@ -34,7 +34,9 @@ while not Correct_info:
 
 print ('Please, choose a starter: ')
 print (starters)
+print ('are you sure of what you ordered? Yes or No? ')
 print ('please, choose a main: ')
 print (main)
 print ('please choose desert: ')
 print (desert)
+print ('Here are the bills', starters + main + desert )
