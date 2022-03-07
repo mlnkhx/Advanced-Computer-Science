@@ -34,3 +34,7 @@ while not Correct_info:
 
 	print ('Please, choose a starter')
 	print (starters)
+	print ('please, choose a main')
+	print (main)
+	print ('please choose desert')
+	print (desert)
