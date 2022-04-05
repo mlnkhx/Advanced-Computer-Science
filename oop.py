@@ -1,3 +1,4 @@
+from datetime import datetime,date
 #Create Class Person
 class Person:
     #Class attribute
@@ -8,12 +9,19 @@ class Person:
         self.dob = dob
 
     def age(self):
-        #calculate the age from self.dob
-        age = 0
+        #Get today's date object
+        today = date.today()
+        #Convert DOB from string to a datetime oject
+        birthdate = datetime.strptime(self.dob, '%Y/%m/%d')
+        #Take into account leap years
+        one_or_zero = ((today.month, today.day) < (birthdate.month, birthdate.day))
+        #Calculate the age
+        year_difference = today.year - birthdate.year
+        age = year_difference - one_or_zero
         return age
 
     def __repr__(self):
-        return f"Name: {self.name}, Date of birth: {self.dob}"
+        return f"Name: {self.name}, Date of birth: {self.dob}, Age: {self.age()}"
 
 #Create the Student (child class)
 class Student(Person):
@@ -24,6 +32,7 @@ class Student(Person):
 
     def __repr__(self):
         return super().__repr__() + f", Grades: {self.grade}, Subjects: {self.subjects}"
+
 #List of Students
 students = []
 
@@ -34,9 +43,15 @@ print("_______________________________")
 
 while True:
     name = input("Name:")
-    dob = input("Date of Birth (yyyy/mm/dd):")
-    subjects = input("Subjects:")
+    while True:
+        try:
+            dob = input("Date of Birth (yyyy/mm/dd):")
+            testdate = datetime.strptime(dob, '%Y/%m/%d')
+            break
+        except Exception as e:
+            print (e)
     grade = input("Grade:")
+    subjects = input("Subjects:")
 
     students.append(Student(name, dob, grade, subjects))
 
